@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css and framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Nothing+You+Could+Do|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/style.css" />
+
+    <!-- //JQuery link -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+    <!-- //uikit links -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit-icons.min.js"></script>
+
+    <!-- //inititalize -->
+    <link href="./public/javascript/init.js">
+    <link href="./public/javascript/main.js">
+</head>
+
+<body>
+    <header class="heady">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+              <button class="uk-button uk-button" type="button" uk-icon="icon: menu; ratio: 3"></button>
+              <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="index.html">About Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="portfolio.html">My Portfolio</a></li>
+                </ul>
+              </div>
+
+                <div class="uk-navbar-center">
+                    <h4>William Stearns</h4>
+                </div>
+                <div class="uk-navbar-right">
+                    <a href="https://github.com/willis5490" target="_blank" uk-icon="icon: github-alt"></a>
+                    <a href="https://www.linkedin.com/in/william-stearns-850aa2161/" target="_blank" uk-icon="icon:  linkedin"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+
+      <div class="uk-animation-fade">
+        <div class="uk-section">
+            <h2  id="submission"  class="uk-heading-line">Contact Me</h2>
+            <p id="service" class="uk-text-lead">Let me know what services I can provide for you.</p>
+            <div class="formDiv">
+                <form action="mailto:wcstearns@yahoo.com">
+                    <fieldset class="uk-fieldset">
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <a id="name1" class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
+                                <input id="userName"  class="uk-input" type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <select id="userService" class="uk-select">
+                                <option value="">What type of inquiry do you have</option>
+                                <option value="1">I need an amazing website built</option>
+                                <option value="2">I need maintenance on my current website</option>
+                                <option value="3">I need a service that is not listed</option>
+                                <span uk-icon="icon: chevron-down"></span>
+                            </select>
+                        </div>
+                        <div class="uk-margin">
+                            <textarea id="userMessage" class="uk-textarea" rows="5" placeholder="Send me a message and tell me whats on your mind?"></textarea>
+                        </div>
+                    </fieldset>
+                    <button id="formSubmit" type="submit" name="action" class="center uk-button uk-button-primary uk-button-large uk-width-large">Send</button>
+                </form>
+
+            </div>
+
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <div id="footerLove" >
+         <p>© 2018 William Stearns</p>
+          </nav>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    $("#formSubmit").on('click', function(){
+
+      let userName = $('#userName').val().trim();
+      let userChoice  = $('#userService').val().trim();
+      let userMessage = $('#userMessage').val().trim();
+      console.log(userName,userChoice,userMessage);
+      $('.uk-section').html('<h1>Thank you for your submission</h1>');
+      setTimeout(function(){ window.location.href = './index.html' }, 3000);
+      
+    })
+    </script>
+</body>
+
+</html>

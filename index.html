@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css and framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Nothing+You+Could+Do|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/style.css" />
+
+    <!-- //JQuery link -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+    <!-- //uikit links -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit-icons.min.js"></script>
+
+    <!-- //inititalize -->
+    <link href="./public/javascript/init.js">
+      <link href="./public/javascript/main.js">
+</head>
+
+<body>
+    <header id="heady">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+              <button class="uk-button uk-button" type="button" uk-icon="icon: menu; ratio: 3"></button>
+              <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="index.html">About Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="portfolio.html">My Portfolio</a></li>
+                </ul>
+              </div>
+
+                <div class="uk-navbar-center">
+                    <h4>William Stearns</h4>
+                </div>
+                <div class="uk-navbar-right">
+                    <a href="https://github.com/willis5490" target="_blank" uk-icon="icon: github-alt"></a>
+                    <a href="https://www.linkedin.com/in/william-stearns-850aa2161/" target="_blank" uk-icon="icon:  linkedin"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="uk-section">
+            <div class="uk-container">
+                <h1 id="aboutHeader" class="uk-animation-slide-top">About</h1>
+                <p id="infoP" class="uk-animation-slide-top">Hey there, I'm William. I'm a UX Designer & Full-stack Developer in the Denver area.
+              I'm an experienced snowboarder and musician who aims to provide a user experience that's intimate and direct.
+              I love doing freelance work in my spare time between music life and work.</p>
+              <br>
+                <img id="aboutPic" class="uk-animation-slide-bottom" src="public\css\portfolioPic.jpg" alt="">
+            </div>
+        </div>
+        <footer>
+          <div id="footerLove" >
+             <p>© 2018 William Stearns</p>
+              </nav>
+          </div>
+        </footer>
+</body>
+</html>

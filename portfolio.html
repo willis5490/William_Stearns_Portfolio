@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css and framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Nothing+You+Could+Do|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/style.css" />
+
+    <!-- //JQuery link -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <!-- //uikit links -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit-icons.min.js"></script>
+
+    <!-- //inititalize -->
+    <link href="./public/javascript/init.js">
+      <link href="./public/javascript/main.js">
+</head>
+
+<body>
+    <header class="heady">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+              <button class="uk-button uk-button" type="button" uk-icon="icon: menu; ratio: 3"></button>
+              <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="index.html">About Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="portfolio.html">My Portfolio</a></li>
+                </ul>
+              </div>
+
+                <div class="uk-navbar-center">
+                    <h4>William Stearns</h4>
+                </div>
+                <div class="uk-navbar-right">
+                    <a href="https://github.com/willis5490" target="_blank" uk-icon="icon: github-alt"></a>
+                    <a href="https://www.linkedin.com/in/william-stearns-850aa2161/" target="_blank" uk-icon="icon:  linkedin"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div>
+        <br>
+            <h1 class="uk-heading-line">Apps</h1>
+            <br>
+            <br>
+            <div class="uk-animation-scale-up">
+
+            <ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-card" uk-grid>
+                <li class="pCards">
+                    <div class="uk-card uk-card-default uk-card-body"><img class="portPics" src="./public/css/foam logo.png"
+                            alt="Foam-Logo"><br>
+                        <a href="https://fast-plateau-59007.herokuapp.com/" target="_blank">Foam</a>
+                        <br>
+                        <a href="https://github.com/willis5490/Foam" uk-icon="icon: github" class="portfolioGit">Github Code</a>
+                        <br>A fun app to look up beer data. Built from the ground up, I scraped the web for all this data, then made a beautiful app for all you beers lovers.<br></div>
+                </li>
+                <li class="pCards">
+                    <div class="uk-card uk-card-default uk-card-body"><img class="portPics" src="./public/css/evil-cartoon-burger-clipart-6.jpg"
+                            alt=""><br>
+                        <a href="https://burger5490.herokuapp.com/" target="_blank">Burger Time!</a>
+                        <br>
+                        <a href="https://github.com/willis5490/Final-Burger-App" uk-icon="icon: github" class="portfolioGit">Github Code</a>
+                        <br>Create, eat and delete burgers! This app demonstrates basic CRUD functions. Using mysql, you can add, update and delete burgers.<br></div>
+                </li>
+                <li class="pCards">
+                    <div class="uk-card uk-card-default uk-card-body"><img class="portPics" src="./public/css/get-down-pic.png"
+                            alt=""><br>
+                        <a href="https://willis5490.github.io/Get-down/." target="_blank">Get Down</a>
+                        <br>
+                        <a href="https://github.com/willis5490/Get-down" uk-icon="icon: github" class="portfolioGit">Github Code</a>
+                        <br>Find concerts anywhere in the country. This app is designed to bring fun into your life through the joy of music.<br></div>
+                </li>
+                <li class="pCards">
+                    <div class="uk-card uk-card-default uk-card-body"><img class="portPics" src="public\css\urkel.jpg"
+                            alt=""><br>
+                        <a href="https://willis5490.github.io/Trivia-Game/" target="_blank">The 90's Trivia Game</a>
+                        <br>
+                        <a href="https://github.com/willis5490/Trivia-Game" uk-icon="icon: github" class="portfolioGit">Github Code</a>
+                        <br>One of my favorite apps where you can test your knowlege for 90's nostalgia.<br></div>
+                </li>
+                <li class="pCards">
+                    <div class="uk-card uk-card-default uk-card-body"><img class="portPics" src="public\css\roommate.png"
+                            alt=""><br>
+                        <a href="https://roommatefinder12345.herokuapp.com/" target="_blank">Roomix</a>
+                        <br>
+                        <a href="https://github.com/willis5490/Friend-finder" uk-icon="icon: github" class="portfolioGit">Github Code</a>
+                        <br>A great tool to find yourself a room-mate! Just answer 10 questions and my app with find the best match for you based on users in my database.  <br></div>
+                </li>
+
+
+            </ul>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+      <div id="footerLove" >
+         <p>© 2018 William Stearns</p>
+          </nav>
+      </div>
+    </footer>
+</body>
+
+</html>
