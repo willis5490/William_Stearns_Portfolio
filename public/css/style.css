@@ -60,7 +60,7 @@ height: 100px;
 
 
 .uk-navbar-toggle.uk-open, .uk-navbar-toggle:focus, .uk-navbar-toggle:hover {
-  color: #rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   outline: 0;
   text-decoration: none;
 }
@@ -73,7 +73,7 @@ h1,p,h2,h4{
   font-family: 'Nothing You Could Do', cursive;
 }
 
-}
+
 .uk-button{
   color: rgb(255, 255, 255);
 }
